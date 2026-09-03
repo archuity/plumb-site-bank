@@ -1,0 +1,17 @@
+{
+  "pool": {
+    "ellipsoid_m": 157.2058563232422,
+    "navd88_ft_corrected": 0
+  },
+  "vertical_tie": {
+    "low_by_ft": 0
+  },
+  "flood_1pct": {
+    "value_ft_navd88": -9999,
+    "ft_above_display_origin_unavailable": -9999,
+    "ADOPTED": "ft_above_display_origin_unavailable"
+  },
+  "geoid": {
+    "adopt_m": -29.093
+  }
+}

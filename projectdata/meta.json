@@ -1,0 +1,130 @@
+{
+  "project": "Wells Fargo Bank Site - Clean RTK Alignment - 2026-08-31",
+  "revision_id": "bank-10cm-2026-09-02-113804",
+  "analysis_surface_resolution_m": 0.1,
+  "runtime_terrain_resolution_m": 0.1,
+  "mobile_terrain_resolution_m": 0.1,
+  "adaptive_quality_enabled": false,
+  "initial_camera_direction": [
+    0.62,
+    0.48,
+    -0.63
+  ],
+  "reconstruction_assets": {
+    "site_mesh_tex.glb": {
+      "file": "viewer/site_mesh_tex.glb",
+      "sha256": "c138032ab195517b5d868fc0d0b0444c18f1777924e8a5d8ad19f06e8bc78a76"
+    },
+    "site_mesh_tex_low.glb": {
+      "file": "viewer/site_mesh_tex_low.glb",
+      "sha256": "c138032ab195517b5d868fc0d0b0444c18f1777924e8a5d8ad19f06e8bc78a76"
+    },
+    "site_mesh_tex_hi.glb": {
+      "file": "viewer/site_mesh_tex_hi.glb",
+      "sha256": "b3726b4c31478a794d73f4d63c3d3bd3d37551ff4b5206acfa2a9d85efec11ca"
+    }
+  },
+  "detail_reconstruction_sha256": "b3726b4c31478a794d73f4d63c3d3bd3d37551ff4b5206acfa2a9d85efec11ca",
+  "mesh_contours": {
+    "source": "reconstruction",
+    "slicer_version": "mesh-slicer-v1",
+    "interval_m": 0.3048,
+    "detail_sha256": "b3726b4c31478a794d73f4d63c3d3bd3d37551ff4b5206acfa2a9d85efec11ca",
+    "packaged": null
+  },
+  "review_zero_state": "none",
+  "grid": {
+    "w": 1102,
+    "h": 853,
+    "step_src_px": 1,
+    "cell_m_x": 0.10003961630860404,
+    "cell_m_y": 0.10003961630860404
+  },
+  "height_encoding": "float32 little-endian, row-major, metres WGS84 ellipsoid (not NAVD88)",
+  "pool_m": 157.2058563232422,
+  "elev_min_m": 157.2058563232422,
+  "elev_max_m": 163.09576416015625,
+  "src_shape": [
+    853,
+    1102
+  ],
+  "crop_offset": [
+    0,
+    0
+  ],
+  "geo": {
+    "epsg": 32616,
+    "crs": "EPSG:32616",
+    "name": "WGS 84 / UTM zone 16N",
+    "e0": 517943.55069651,
+    "de_dcol": 0.1,
+    "de_drow": 0.0,
+    "n0": 3695749.6046258705,
+    "dn_dcol": 0.0,
+    "dn_drow": -0.1,
+    "utm_point_scale": 0.9996039937969992,
+    "grid_convergence_deg": 0.10654781727148725,
+    "ground_m_per_px_x": 0.10003961630860404,
+    "ground_m_per_px_y": 0.10003961630860404,
+    "note": "Pixel centres mapped directly from the 0.1 m EPSG:32616 DTM grid."
+  },
+  "tuner_downsample": 1,
+  "elevation_origin_m": 157.2058563232422,
+  "ground_valid": {
+    "file": "ground_valid.bin",
+    "dtype": "uint8",
+    "shape": [
+      853,
+      1102
+    ],
+    "meaning": "1 = usable photogrammetry-derived DTM estimate cell; 0 = downstream preparation fill. Neither state is a surveyed measurement.",
+    "measured_cells": 936237,
+    "filled_cells": 3769,
+    "measured_fraction": 0.99599045112478,
+    "terminology_note": "The measured_* field names are retained for Spatial OS - Site schema compatibility; they mean usable source-derived coverage, not survey measurement."
+  },
+  "issued_deliverables": [
+    {
+      "id": "orthophoto",
+      "issued": true,
+      "downloadable": true,
+      "display_name": "Orthophoto",
+      "file_type": "GeoTIFF",
+      "file": "downloads/bank_ortho_clean_5cm.tif",
+      "byte_size": 15770134,
+      "sha256": "8d232237e19f929d9bf8beba8eda329494f88104cf607769b957772774d38145"
+    },
+    {
+      "id": "ground-model",
+      "issued": true,
+      "downloadable": true,
+      "display_name": "10 cm · Photogrammetric · Not survey Ground model",
+      "file_type": "GeoTIFF",
+      "file": "downloads/bank_dtm_clean_10cm.tif",
+      "byte_size": 1059110,
+      "sha256": "21fd880a4377eadc0b48d9076a0caac78b9bdf6ab919b893c98896bd249308b2"
+    },
+    {
+      "id": "surface-model",
+      "issued": true,
+      "downloadable": true,
+      "display_name": "10 cm · Photogrammetric · Not survey Surface model",
+      "file_type": "GeoTIFF",
+      "file": "downloads/bank_dsm_clean_10cm.tif",
+      "byte_size": 1482551,
+      "sha256": "e561ec0818e71953a09e359ca8b2f9efb589e7f53d3f0b48514c51d08db3b2ce"
+    },
+    {
+      "id": "site-mesh",
+      "issued": true,
+      "downloadable": true,
+      "display_name": "Textured site mesh",
+      "file_type": "GLB",
+      "file": "downloads/site_mesh_tex_hi.glb",
+      "byte_size": 72904964,
+      "sha256": "b3726b4c31478a794d73f4d63c3d3bd3d37551ff4b5206acfa2a9d85efec11ca"
+    }
+  ],
+  "review_display_name": "Wells Fargo Bank Site",
+  "limitations": "Photogrammetric and mesh-derived. Not survey."
+}

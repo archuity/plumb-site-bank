@@ -1,0 +1,234 @@
+{
+  "legends": {
+    "topo": {
+      "title": "Relative terrain",
+      "unit": "",
+      "stops": [
+        [
+          157.2058563232422,
+          [
+            32,
+            62,
+            96
+          ]
+        ],
+        [
+          163.09576416015625,
+          [
+            176,
+            84,
+            72
+          ]
+        ]
+      ]
+    },
+    "slope": {
+      "title": "Ground slope",
+      "unit": "deg",
+      "stops": [
+        [
+          0,
+          [
+            38,
+            92,
+            148
+          ]
+        ],
+        [
+          5,
+          [
+            96,
+            176,
+            96
+          ]
+        ],
+        [
+          12,
+          [
+            226,
+            208,
+            88
+          ]
+        ],
+        [
+          25,
+          [
+            214,
+            96,
+            60
+          ]
+        ],
+        [
+          35,
+          [
+            150,
+            46,
+            60
+          ]
+        ]
+      ]
+    },
+    "flow": {
+      "title": "Water flow",
+      "unit": "",
+      "stops": [
+        [
+          "low",
+          [
+            28,
+            42,
+            56
+          ]
+        ],
+        [
+          "channel",
+          [
+            140,
+            208,
+            232
+          ]
+        ]
+      ]
+    },
+    "canopy": {
+      "title": "Canopy height",
+      "unit": "",
+      "stops": [
+        [
+          0,
+          [
+            48,
+            54,
+            48
+          ]
+        ],
+        [
+          3,
+          [
+            78,
+            118,
+            70
+          ]
+        ],
+        [
+          8,
+          [
+            104,
+            160,
+            84
+          ]
+        ],
+        [
+          15,
+          [
+            226,
+            220,
+            130
+          ]
+        ]
+      ]
+    },
+    "gradechange": {
+      "title": "Unavailable",
+      "unit": "",
+      "stops": [
+        [
+          "not supplied",
+          [
+            42,
+            46,
+            50
+          ]
+        ]
+      ],
+      "note": "No additional site surface is supplied."
+    },
+    "contours": {
+      "title": "Mesh contours",
+      "unit": "",
+      "stops": [],
+      "note": "Relative to selected zero."
+    }
+  },
+  "rasters": {
+    "topography": {
+      "width": 1102,
+      "height": 853,
+      "source_to_output": [
+        0.1,
+        0.0,
+        517943.50069651,
+        0.0,
+        -0.1,
+        3695749.6546258703,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source_role": "dtm"
+    },
+    "slope": {
+      "width": 1102,
+      "height": 853,
+      "source_to_output": [
+        0.1,
+        0.0,
+        517943.50069651,
+        0.0,
+        -0.1,
+        3695749.6546258703,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source_role": "dtm"
+    },
+    "flow": {
+      "width": 1102,
+      "height": 853,
+      "source_to_output": [
+        0.1,
+        0.0,
+        517943.50069651,
+        0.0,
+        -0.1,
+        3695749.6546258703,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source_role": "dtm"
+    },
+    "canopy": {
+      "width": 1102,
+      "height": 853,
+      "source_to_output": [
+        0.1,
+        0.0,
+        517943.50069651,
+        0.0,
+        -0.1,
+        3695749.6546258703,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "source_role": "dsm-minus-dtm"
+    },
+    "gradechange": {
+      "width": 1102,
+      "height": 853,
+      "source_to_output": [
+        0.1,
+        0.0,
+        517943.50069651,
+        0.0,
+        -0.1,
+        3695749.6546258703,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  }
+}
